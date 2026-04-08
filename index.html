@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- PRIMARY SEO META TAGS -->
+<title>Annecy Bio — Precision Body Contouring & Fat Reduction | Next-Generation Aesthetics</title>
+<meta name="description" content="Annecy Bio is developing a first-in-class platform for precision fat loss, body contouring, and skin tightening. Harvard-backed science. A new category in aesthetic medicine.">
+<meta name="keywords" content="fat loss, body contouring, skin tightening, aesthetic medicine, fat reduction, non-surgical fat removal, body contouring technology, longevity aesthetics, precision fat loss, medical aesthetics, body sculpting, non-invasive fat reduction, skin laxity treatment, aesthetic dermatology, GLP-1 body contouring, post-weight-loss body contouring, aesthetic innovation, next generation aesthetics">
+<meta name="author" content="Annecy Bio">
+<link rel="canonical" href="https://annecybioco.com">
+
+<!-- OPEN GRAPH / SOCIAL -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Annecy Bio — A New Category in Aesthetic Medicine">
+<meta property="og:description" content="Precision fat loss, body contouring, and skin tightening. Harvard-backed. Category-defining.">
+<meta property="og:url" content="https://annecybioco.com">
+<meta property="og:site_name" content="Annecy Bio">
+
+<!-- TWITTER CARD -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Annecy Bio — A New Category in Aesthetic Medicine">
+<meta name="twitter:description" content="Precision fat loss, body contouring, and skin tightening. Harvard-backed. Category-defining.">
+
+<!-- STRUCTURED DATA (JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalOrganization",
+  "name": "Annecy Bio",
+  "url": "https://annecybioco.com",
+  "description": "Company developing a transformative technology and first-in-class platform for precision fat loss, body contouring, and skin tightening.",
+  "foundingDate": "2024",
+  "medicalSpecialty": "Aesthetic Medicine",
+  "areaServed": "United States",
+  "knowsAbout": [
+    "Body Contouring",
+    "Fat Reduction",
+    "Skin Tightening",
+    "Aesthetic Medicine",
+    "Aesthetic Technology",
+    "Non-Surgical Fat Loss",
+    "Longevity Aesthetics",
+    "Precision Medicine"
+  ],
+  "founder": [
+    {
+      "@type": "Person",
+      "name": "Dr. Lilit Garibyan",
+      "jobTitle": "Chief Executive Officer",
+      "affiliation": { "@type": "Organization", "name": "Harvard Medical School" }
+    },
+    {
+      "@type": "Person",
+      "name": "Luba Greenwood",
+      "jobTitle": "Executive Chair"
+    }
+  ],
+  "member": {
+    "@type": "Person",
+    "name": "Dr. Rox Anderson",
+    "jobTitle": "Scientific Advisory Board Chair",
+    "description": "Pioneer of selective photothermolysis and modern aesthetic dermatology",
+    "affiliation": { "@type": "Organization", "name": "Massachusetts General Hospital" }
+  }
+}
+</script>
+
+<style>
+  /* ============================================
+     RESET & VARIABLES
+     ============================================ */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --ice: #e8f4f8;
+    --ice-mid: #b8dce8;
+    --deep: #0a2a3a;
+    --deep-darker: #06161f;
+    --accent: #2a8fa8;
+    --accent-light: #4ab8d4;
+    --text: #1a3a4a;
+    --muted: #5a8a9a;
+    --white: #ffffff;
+    --off-white: #f7fbfd;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Georgia', serif;
+    color: var(--text);
+    background: var(--white);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ============================================
+     NAVIGATION
+     ============================================ */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1.25rem 4rem;
+    background: rgba(255,255,255,0.92);
+    border-bottom: 0.5px solid rgba(42,143,168,0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .logo {
+    display: flex; align-items: center; gap: 10px;
+    font-family: 'Georgia', serif; font-size: 1.25rem;
+    letter-spacing: 0.08em; color: var(--deep); font-weight: normal;
+    text-decoration: none;
+  }
+  .logo span { color: var(--accent); }
+  .nav-links { display: flex; gap: 2.5rem; align-items: center; }
+  .nav-links a {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--muted); text-decoration: none; transition: color 0.3s;
+  }
+  .nav-links a:hover { color: var(--accent); }
+  .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
+  .hamburger svg { display: block; }
+
+  /* ============================================
+     HERO
+     ============================================ */
+  .hero {
+    min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    background: linear-gradient(160deg, #07131c 0%, #0a2233 35%, #0d2d40 60%, #0a2535 100%);
+    position: relative; overflow: hidden; text-align: center;
+    padding: 8rem 2rem 4rem;
+  }
+  .hero-bg { position: absolute; inset: 0; }
+  .hero-bg::after {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: radial-gradient(circle, rgba(184,220,232,0.05) 1px, transparent 1px);
+    background-size: 52px 52px;
+  }
+  /* Subtle floating particles */
+  .hero-particles { position: absolute; inset: 0; pointer-events: none; }
+  .particle {
+    position: absolute; border-radius: 50%;
+    background: rgba(74,184,212,0.12);
+    animation: float 14s ease-in-out infinite;
+  }
+  .particle:nth-child(1) { width: 4px; height: 4px; left: 12%; top: 30%; animation-delay: 0s; animation-duration: 16s; }
+  .particle:nth-child(2) { width: 3px; height: 3px; left: 78%; top: 25%; animation-delay: -4s; animation-duration: 13s; }
+  .particle:nth-child(3) { width: 5px; height: 5px; left: 42%; top: 72%; animation-delay: -7s; animation-duration: 18s; }
+  .particle:nth-child(4) { width: 2px; height: 2px; left: 88%; top: 55%; animation-delay: -2s; animation-duration: 15s; }
+  .particle:nth-child(5) { width: 3px; height: 3px; left: 22%; top: 78%; animation-delay: -9s; animation-duration: 17s; }
+  @keyframes float {
+    0%, 100% { transform: translateY(0) translateX(0); opacity: 0.2; }
+    25% { transform: translateY(-25px) translateX(8px); opacity: 0.5; }
+    50% { transform: translateY(-12px) translateX(-12px); opacity: 0.3; }
+    75% { transform: translateY(-35px) translateX(4px); opacity: 0.45; }
+  }
+
+  .hero-content { position: relative; z-index: 2; max-width: 740px; }
+  .hero-eyebrow {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 0.68rem; letter-spacing: 0.4em; text-transform: uppercase;
+    color: var(--accent-light); margin-bottom: 2.25rem; opacity: 0.75;
+  }
+  .hero h1 {
+    font-family: 'Georgia', serif;
+    font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+    font-weight: normal; line-height: 1.25;
+    color: var(--white); margin-bottom: 1.75rem;
+    letter-spacing: 0.015em;
+  }
+  .hero h1 em { font-style: italic; color: var(--accent-light); }
+  .hero-sub {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.05rem; line-height: 1.85;
+    color: rgba(232,244,248,0.55);
+    max-width: 520px; margin: 0 auto 3rem;
+    font-weight: 300;
+  }
+  .hero-cta {
+    display: inline-block;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 0.72rem; letter-spacing: 0.28em; text-transform: uppercase;
+    padding: 1rem 2.75rem; color: rgba(255,255,255,0.85);
+    border: 0.5px solid rgba(74,184,212,0.35);
+    text-decoration: none; transition: all 0.4s;
+    background: transparent; cursor: pointer;
+  }
+  .hero-cta:hover { background: rgba(74,184,212,0.08); border-color: rgba(74,184,212,0.6); color: var(--white); }
+
+  /* ============================================
+     SHARED
+     ============================================ */
+  .divider { height: 1px; background: linear-gradient(90deg, transparent, var(--ice-mid), transparent); }
+  .divider-dark { height: 1px; background: linear-gradient(90deg, transparent, rgba(74,184,212,0.15), transparent); }
+  section { padding: 6.5rem 4rem; }
+  .section-inner { max-width: 1100px; margin: 0 auto; }
+  .section-label {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 0.65rem; letter-spacing: 0.4em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 1.5rem;
+  }
+  h2 {
+    font-family: 'Georgia', serif; font-size: clamp(1.7rem, 3vw, 2.5rem);
+    font-weight: normal; color: var(--deep); line-height: 1.3;
+    margin-bottom: 1.5rem;
+  }
+  .body-text {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1rem; line-height: 1.9; color: var(--muted); font-weight: 300;
+    max-width: 540px;
+  }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+  .split.reverse .split-text { order: 2; }
+  .split.reverse .split-visual { order: 1; }
+  .split-visual {
+    aspect-ratio: 4/3; border-radius: 2px;
+    background: linear-gradient(135deg, #061420 0%, #0a2538 50%, #0d3048 100%);
+    display: flex; align-items: center; justify-content: center;
+    position: relative; overflow: hidden;
+  }
+  .split-visual::before {
+    content: ''; position: absolute; inset: 0;
+    background-image: radial-gradient(circle, rgba(74,184,212,0.07) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+  .split-visual svg { position: relative; z-index: 2; }
+
+  /* ============================================
+     ABOUT
+     ============================================ */
+  .about-stats {
+    display: flex; gap: 3rem; margin-top: 2.5rem;
+  }
+  .stat { border-left: 1px solid var(--ice-mid); padding-left: 1.25rem; }
+  .stat-number {
+    font-family: 'Georgia', serif; font-size: 1.7rem; color: var(--accent);
+    line-height: 1.2;
+  }
+  .stat-label {
+    font-family: 'Helvetica Neue', sans-serif; font-size: 0.68rem;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--muted); margin-top: 0.2rem; font-weight: 400;
+  }
+
+  /* ============================================
+     PLATFORM (intentionally vague tech section)
+     ============================================ */
+  .platform-section { background: var(--deep); overflow: hidden; position: relative; }
+  .platform-section::before {
+    content: ''; position: absolute; inset: 0;
+    background-image: radial-gradient(circle, rgba(74,184,212,0.03) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+  .platform-section .section-inner { position: relative; z-index: 2; }
+  .platform-section h2 { color: var(--white); }
+  .platform-section .section-label { color: var(--accent-light); opacity: 0.8; }
+  .platform-section .body-text { color: rgba(232,244,248,0.5); max-width: 600px; }
+  .platform-pillars {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 0; margin-top: 4rem;
+  }
+  .platform-pillar {
+    padding: 2.5rem; border: 0.5px solid rgba(74,184,212,0.1);
+    transition: background 0.4s;
+  }
+  .platform-pillar:hover { background: rgba(74,184,212,0.03); }
+  .platform-pillar-num {
+    font-family: 'Helvetica Neue', sans-serif; font-size: 0.6rem;
+    letter-spacing: 0.3em; text-transform: uppercase;
+    color: rgba(74,184,212,0.4); margin-bottom: 1.5rem;
+  }
+  .platform-pillar h3 {
+    font-family: 'Georgia', serif; font-size: 1.1rem; font-weight: normal;
+    color: rgba(255,255,255,0.9); margin-bottom: 0.85rem; line-height: 1.35;
+  }
+  .platform-pillar p {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 0.88rem; line-height: 1.85; color: rgba(232,244,248,0.4); font-weight: 300;
+  }
+
+  /* ============================================
+     MARKET TAILWIND (SEO-rich)
+     ============================================ */
+  .tailwind-section { background: var(--off-white); }
+  .tailwind-content {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start;
+    margin-top: 3rem;
+  }
+  .tailwind-text {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 0.95rem; line-height: 2; color: var(--muted); font-weight: 300;
+  }
+  .tailwind-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  .tw-stat {
+    padding: 1.5rem; border-top: 1px solid var(--ice-mid);
+    background: var(--white);
+  }
+  .tw-stat-number {
+    font-family: 'Georgia', serif; font-size: 1.8rem;
+    color: var(--accent); margin-bottom: 0.35rem;
+  }
+  .tw-stat-label {
+    font-family: 'Helvetica Neue', sans-serif; font-size: 0.68rem;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--muted); line-height: 1.5;
+  }
+
+  /* ============================================
+     SCIENCE
+     ============================================ */
+  .pub-list { margin-top: 2.5rem; }
+  .pub-item {
+    padding: 1.75rem 0; border-bottom: 0.5px solid var(--ice-mid);
+    display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: center;
+  }
+  .pub-item:first-child { border-top: 0.5px solid var(--ice-mid); }
+  .pub-title {
+    font-family: 'Georgia', serif; font-size: 1rem; color: var(--deep);
+    font-weight: normal; line-height: 1.5; margin-bottom: 0.3rem;
+  }
+  .pub-journal {
+    font-family: 'Helvetica Neue', sans-serif; font-size: 0.8rem;
+    color: var(--muted); font-weight: 300; font-style: italic;
+  }
+  .pub-tag {
+    font-family: 'Helvetica Neue', sans-serif; font-size: 0.6rem;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--accent); border: 0.5px solid rgba(42,143,168,0.25);
+    padding: 0.3rem 0.7rem; border-radius: 2px; white-space: nowrap;
+  }
+
+  /* ============================================
+     TEAM
+     ============================================ */
+  .team-section { background: var(--off-white); }
+  .team-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 3rem; margin-top: 3.5rem;
+  }
+  .team-member { text-align: center; }
+  .team-avatar {
+    width: 140px; height: 140px; border-radius: 50%;
+    background: linear-gradient(135deg, #0a2233 0%, #0d3048 100%);
+    border: 1.5px solid rgba(42,143,168,0.4);
+    margin: 0 auto 1.5rem;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Georgia', serif; font-size: 1.4rem; color: var(--accent-light);
+    letter-spacing: 0.05em; overflow: hidden;
+    position: relative;
+  }
+  .team-avatar img {
+    width: 100%; height: 100%; object-fit: cover;
+    border-radius: 50%;
+  }
+  .team-avatar .initials {
+    position: absolute; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .team-name {
+    font-family: 'Georgia', serif; font-size: 1.05rem;
+    color: var(--deep); font-weight: normal; margin-bottom: 0.3rem;
+  }
+  .team-role {
+    font-family: 'Helvetica Neue', sans-serif; font-size: 0.7rem;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 0.75rem;
+  }
+  .team-bio {
+    font-family: 'Helvetica Neue', sans-serif; font-size: 0.85rem;
+    line-height: 1.75; color: var(--muted); font-weight: 300;
+  }
+
+  /* ============================================
+     CONTACT
+     ============================================ */
+  .contact { background: var(--deep); }
+  .contact h2 { color: var(--white); }
+  .contact .body-text { color: rgba(232,244,248,0.5); }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+  .contact-form { display: flex; flex-direction: column; gap: 1.25rem; margin-top: 2.5rem; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  input, textarea, select {
+    width: 100%; padding: 0.85rem 0;
+    background: transparent; border: none;
+    border-bottom: 0.5px solid rgba(74,184,212,0.25);
+    color: var(--white); font-family: 'Helvetica Neue', sans-serif;
+    font-size: 0.88rem; font-weight: 300; outline: none; transition: border-color 0.3s;
+    border-radius: 0;
+  }
+  select { -webkit-appearance: none; appearance: none; cursor: pointer; }
+  select option { background: var(--deep); color: var(--white); }
+  input::placeholder, textarea::placeholder { color: rgba(232,244,248,0.25); font-weight: 300; }
+  input:focus, textarea:focus, select:focus { border-bottom-color: var(--accent-light); }
+  textarea { resize: none; min-height: 90px; }
+  .submit-btn {
+    margin-top: 0.75rem; align-self: flex-start;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 0.72rem; letter-spacing: 0.28em; text-transform: uppercase;
+    padding: 0.9rem 2.5rem; color: rgba(255,255,255,0.8);
+    border: 0.5px solid rgba(74,184,212,0.35);
+    background: transparent; cursor: pointer; transition: all 0.4s;
+  }
+  .submit-btn:hover { background: rgba(74,184,212,0.08); border-color: rgba(74,184,212,0.6); color: var(--white); }
+  .contact-details p {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 0.82rem; line-height: 2; color: rgba(232,244,248,0.35);
+    font-weight: 300; margin-top: 2.5rem;
+  }
+  .form-success {
+    display: none; text-align: center; padding: 3rem 1rem;
+  }
+  .form-success h3 {
+    font-family: 'Georgia', serif; font-size: 1.2rem; color: var(--white);
+    font-weight: normal; margin-bottom: 0.75rem;
+  }
+  .form-success p {
+    font-family: 'Helvetica Neue', sans-serif; font-size: 0.88rem;
+    color: rgba(232,244,248,0.5); font-weight: 300;
+  }
+
+  /* ============================================
+     FOOTER
+     ============================================ */
+  footer {
+    background: var(--deep-darker); padding: 2.5rem 4rem;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  footer .logo { font-size: 1rem; }
+  footer p {
+    font-family: 'Helvetica Neue', sans-serif; font-size: 0.65rem;
+    letter-spacing: 0.15em; color: rgba(90,138,154,0.4);
+  }
+  .footer-links { display: flex; gap: 2rem; }
+  .footer-links a {
+    font-family: 'Helvetica Neue', sans-serif; font-size: 0.65rem;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    color: rgba(90,138,154,0.4); text-decoration: none; transition: color 0.3s;
+  }
+  .footer-links a:hover { color: var(--accent); }
+
+  /* ============================================
+     SCROLL ANIMATIONS
+     ============================================ */
+  .fade-in {
+    opacity: 0; transform: translateY(24px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+  }
+  .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+  /* ============================================
+     RESPONSIVE
+     ============================================ */
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    .nav-links.open {
+      display: flex; flex-direction: column;
+      position: absolute; top: 100%; left: 0; right: 0;
+      background: rgba(255,255,255,0.98); padding: 1.5rem;
+      border-bottom: 0.5px solid rgba(42,143,168,0.12);
+      gap: 1.25rem;
+    }
+    .hamburger { display: block; }
+    section { padding: 4rem 1.5rem; }
+    .split { grid-template-columns: 1fr; gap: 2.5rem; }
+    .split.reverse .split-text { order: 1; }
+    .split.reverse .split-visual { order: 2; }
+    .platform-pillars { grid-template-columns: 1fr; }
+    .tailwind-content { grid-template-columns: 1fr; gap: 2.5rem; }
+    .tailwind-stats { grid-template-columns: 1fr 1fr; }
+    .team-grid { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .form-row { grid-template-columns: 1fr; }
+    .about-stats { flex-direction: column; gap: 1.5rem; }
+    footer { flex-direction: column; gap: 1rem; text-align: center; }
+    .footer-links { justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ==========================================
+     NAVIGATION
+     ========================================== -->
+<nav>
+  <a href="#" class="logo">
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <line x1="11" y1="1" x2="11" y2="21" stroke="#2a8fa8" stroke-width="1.2"/>
+      <line x1="1" y1="11" x2="21" y2="11" stroke="#2a8fa8" stroke-width="1.2"/>
+      <line x1="4.05" y1="4.05" x2="17.95" y2="17.95" stroke="#2a8fa8" stroke-width="1.2"/>
+      <line x1="17.95" y1="4.05" x2="4.05" y2="17.95" stroke="#2a8fa8" stroke-width="1.2"/>
+      <line x1="11" y1="1" x2="8" y2="4" stroke="#2a8fa8" stroke-width="0.8"/>
+      <line x1="11" y1="1" x2="14" y2="4" stroke="#2a8fa8" stroke-width="0.8"/>
+      <line x1="11" y1="21" x2="8" y2="18" stroke="#2a8fa8" stroke-width="0.8"/>
+      <line x1="11" y1="21" x2="14" y2="18" stroke="#2a8fa8" stroke-width="0.8"/>
+      <line x1="1" y1="11" x2="4" y2="8" stroke="#2a8fa8" stroke-width="0.8"/>
+      <line x1="1" y1="11" x2="4" y2="14" stroke="#2a8fa8" stroke-width="0.8"/>
+      <line x1="21" y1="11" x2="18" y2="8" stroke="#2a8fa8" stroke-width="0.8"/>
+      <line x1="21" y1="11" x2="18" y2="14" stroke="#2a8fa8" stroke-width="0.8"/>
+      <circle cx="11" cy="11" r="2" fill="#2a8fa8" opacity="0.7"/>
+    </svg>
+    <span>Annecy</span> Bio
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="#about">About</a>
+    <a href="#platform">Platform</a>
+    <a href="#science">Science</a>
+    <a href="#team">Leadership</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <button class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Toggle navigation">
+    <svg width="22" height="16" viewBox="0 0 22 16" fill="none">
+      <line x1="0" y1="1" x2="22" y2="1" stroke="#5a8a9a" stroke-width="1.2"/>
+      <line x1="0" y1="8" x2="22" y2="8" stroke="#5a8a9a" stroke-width="1.2"/>
+      <line x1="0" y1="15" x2="22" y2="15" stroke="#5a8a9a" stroke-width="1.2"/>
+    </svg>
+  </button>
+</nav>
+
+<!-- ==========================================
+     HERO
+     ========================================== -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-particles">
+    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+    <div class="particle"></div><div class="particle"></div>
+  </div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Body Contouring &middot; Fat Reduction &middot; Skin Tightening</p>
+    <h1>A new category in<br><em>aesthetic medicine</em></h1>
+    <p class="hero-sub">We are building something that doesn't exist yet — a platform designed to redefine how clinicians approach fat loss, body contouring, and skin rejuvenation.</p>
+    <a href="#contact" class="hero-cta">Request Access</a>
+  </div>
+</section>
+
+<!-- ==========================================
+     ABOUT
+     ========================================== -->
+<section id="about">
+  <div class="section-inner">
+    <div class="split fade-in">
+      <div class="split-text">
+        <p class="section-label">About Annecy Bio</p>
+        <h2>Quietly building the next inflection point in aesthetics</h2>
+        <p class="body-text">Annecy Bio is a company developing a transformative technology and a first-in-class platform at the intersection of materials science and aesthetic medicine. Our approach represents a fundamental rethinking of how the body can be sculpted — with a mechanism that is elegant, precise, and entirely unlike anything currently on the market.</p>
+      </div>
+      <div class="split-visual">
+        <!-- Molecular structure SVG -->
+        <svg width="220" height="180" viewBox="0 0 220 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <line x1="110" y1="90" x2="75" y2="58" stroke="rgba(74,184,212,0.3)" stroke-width="1.5"/>
+          <line x1="110" y1="90" x2="145" y2="58" stroke="rgba(74,184,212,0.3)" stroke-width="1.5"/>
+          <line x1="75" y1="58" x2="48" y2="80" stroke="rgba(74,184,212,0.15)" stroke-width="1"/>
+          <line x1="75" y1="58" x2="60" y2="30" stroke="rgba(74,184,212,0.15)" stroke-width="1"/>
+          <line x1="145" y1="58" x2="170" y2="80" stroke="rgba(74,184,212,0.15)" stroke-width="1"/>
+          <line x1="145" y1="58" x2="162" y2="30" stroke="rgba(74,184,212,0.15)" stroke-width="1"/>
+          <line x1="110" y1="90" x2="110" y2="128" stroke="rgba(74,184,212,0.2)" stroke-width="1.2"/>
+          <line x1="110" y1="128" x2="85" y2="150" stroke="rgba(74,184,212,0.12)" stroke-width="1"/>
+          <line x1="110" y1="128" x2="135" y2="150" stroke="rgba(74,184,212,0.12)" stroke-width="1"/>
+          <circle cx="48" cy="80" r="7" fill="rgba(184,220,232,0.08)" stroke="rgba(184,220,232,0.35)" stroke-width="0.8"/>
+          <circle cx="60" cy="30" r="7" fill="rgba(184,220,232,0.08)" stroke="rgba(184,220,232,0.35)" stroke-width="0.8"/>
+          <circle cx="170" cy="80" r="7" fill="rgba(184,220,232,0.08)" stroke="rgba(184,220,232,0.35)" stroke-width="0.8"/>
+          <circle cx="162" cy="30" r="7" fill="rgba(184,220,232,0.08)" stroke="rgba(184,220,232,0.35)" stroke-width="0.8"/>
+          <circle cx="85" cy="150" r="7" fill="rgba(184,220,232,0.08)" stroke="rgba(184,220,232,0.35)" stroke-width="0.8"/>
+          <circle cx="135" cy="150" r="7" fill="rgba(184,220,232,0.08)" stroke="rgba(184,220,232,0.35)" stroke-width="0.8"/>
+          <circle cx="75" cy="58" r="11" fill="rgba(42,143,168,0.15)" stroke="rgba(74,184,212,0.45)" stroke-width="0.8"/>
+          <circle cx="145" cy="58" r="11" fill="rgba(42,143,168,0.15)" stroke="rgba(74,184,212,0.45)" stroke-width="0.8"/>
+          <circle cx="110" cy="128" r="11" fill="rgba(42,143,168,0.15)" stroke="rgba(74,184,212,0.45)" stroke-width="0.8"/>
+          <circle cx="110" cy="90" r="16" fill="rgba(42,143,168,0.2)" stroke="rgba(74,184,212,0.6)" stroke-width="1"/>
+          <circle cx="110" cy="90" r="8" fill="rgba(74,184,212,0.18)"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     PLATFORM (Intentionally enigmatic)
+     ========================================== -->
+<section class="platform-section" id="platform">
+  <div class="section-inner fade-in">
+    <p class="section-label">The platform</p>
+    <h2 style="color: var(--white); max-width: 600px;">Precision fat loss and skin tightening — reimagined from first principles</h2>
+    <p class="body-text" style="margin-bottom: 0;">Current body contouring forces a trade-off: invasive procedures with real results, or non-invasive options that under-deliver. We built a platform to eliminate that compromise entirely.</p>
+    <div class="platform-pillars">
+      <div class="platform-pillar">
+        <div class="platform-pillar-num">01</div>
+        <h3>Novel mechanism of action</h3>
+        <p>A biologically elegant approach that works with the body's own processes — selectively targeting fat while stimulating tissue renewal. No pharmacologic agent. No thermal injury.</p>
+      </div>
+      <div class="platform-pillar">
+        <div class="platform-pillar-num">02</div>
+        <h3>Precision at the point of care</h3>
+        <p>Clinician-controlled dosing and anatomical targeting that adapts to each patient. Sub-five-minute treatments. No capital equipment required.</p>
+      </div>
+      <div class="platform-pillar">
+        <div class="platform-pillar-num">03</div>
+        <h3>Dual-action by design</h3>
+        <p>Fat reduction and skin tightening are not two separate treatments — they are the natural, simultaneous outcome of a single platform mechanism.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     MARKET TAILWIND (SEO-rich)
+     ========================================== -->
+<section class="tailwind-section">
+  <div class="section-inner fade-in">
+    <p class="section-label">The moment</p>
+    <h2>Why the market is ready for a new approach to body contouring</h2>
+    <div class="tailwind-content">
+      <div class="tailwind-text">
+        The global aesthetic medicine market exceeds $100 billion, with body contouring and fat reduction among the fastest-growing segments. The rise of GLP-1 therapies is creating an entirely new patient population — tens of millions who have lost weight and now seek solutions for residual fat deposits and skin laxity. Meanwhile, existing non-surgical body contouring options remain limited by weak efficacy, high equipment costs, and patient dissatisfaction. Annecy Bio's platform is designed to meet this moment — a new category of fat loss and skin tightening technology built for the patients, clinicians, and economics of the next decade.
+      </div>
+      <div class="tailwind-stats">
+        <div class="tw-stat">
+          <div class="tw-stat-number">$100B+</div>
+          <div class="tw-stat-label">Aesthetic medicine<br>global market</div>
+        </div>
+        <div class="tw-stat">
+          <div class="tw-stat-number">14-16%</div>
+          <div class="tw-stat-label">Body contouring<br>annual growth</div>
+        </div>
+        <div class="tw-stat">
+          <div class="tw-stat-number">50M+</div>
+          <div class="tw-stat-label">GLP-1 patients<br>seeking contouring</div>
+        </div>
+        <div class="tw-stat">
+          <div class="tw-stat-number">5&times;</div>
+          <div class="tw-stat-label">Expanded patient<br>addressability</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ==========================================
+     SCIENCE
+     ========================================== -->
+<section id="science">
+  <div class="section-inner fade-in">
+    <div class="split">
+      <div class="split-text">
+        <p class="section-label">The science</p>
+        <h2>A decade of peer-reviewed research from world-leading physician scientists</h2>
+        <p class="body-text">Our platform is grounded in peer-reviewed science from one of the world's leading physician scientists who are leaders in aesthetic medicine and are faculty at Harvard Medical School. They have demonstrated proof of concept in selective fat reduction, tissue safety, and collagen regeneration.</p>
+      </div>
+      <div class="split-visual">
+        <!-- Ice crystal SVG -->
+        <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <line x1="100" y1="20" x2="100" y2="180" stroke="rgba(74,184,212,0.4)" stroke-width="1.2"/>
+          <line x1="20" y1="100" x2="180" y2="100" stroke="rgba(74,184,212,0.4)" stroke-width="1.2"/>
+          <line x1="32.7" y1="32.7" x2="167.3" y2="167.3" stroke="rgba(74,184,212,0.4)" stroke-width="1.2"/>
+          <line x1="167.3" y1="32.7" x2="32.7" y2="167.3" stroke="rgba(74,184,212,0.4)" stroke-width="1.2"/>
+          <line x1="100" y1="55" x2="82" y2="37" stroke="rgba(74,184,212,0.25)" stroke-width="0.8"/>
+          <line x1="100" y1="55" x2="118" y2="37" stroke="rgba(74,184,212,0.25)" stroke-width="0.8"/>
+          <line x1="100" y1="145" x2="82" y2="163" stroke="rgba(74,184,212,0.25)" stroke-width="0.8"/>
+          <line x1="100" y1="145" x2="118" y2="163" stroke="rgba(74,184,212,0.25)" stroke-width="0.8"/>
+          <line x1="55" y1="100" x2="37" y2="82" stroke="rgba(74,184,212,0.25)" stroke-width="0.8"/>
+          <line x1="55" y1="100" x2="37" y2="118" stroke="rgba(74,184,212,0.25)" stroke-width="0.8"/>
+          <line x1="145" y1="100" x2="163" y2="82" stroke="rgba(74,184,212,0.25)" stroke-width="0.8"/>
+          <line x1="145" y1="100" x2="163" y2="118" stroke="rgba(74,184,212,0.25)" stroke-width="0.8"/>
+          <circle cx="100" cy="100" r="10" fill="rgba(42,143,168,0.25)" stroke="rgba(74,184,212,0.6)" stroke-width="1"/>
+          <circle cx="100" cy="100" r="4" fill="rgba(74,184,212,0.4)"/>
+          <circle cx="100" cy="22" r="3" fill="rgba(74,184,212,0.35)"/>
+          <circle cx="100" cy="178" r="3" fill="rgba(74,184,212,0.35)"/>
+          <circle cx="22" cy="100" r="3" fill="rgba(74,184,212,0.35)"/>
+          <circle cx="178" cy="100" r="3" fill="rgba(74,184,212,0.35)"/>
+          <circle cx="34.4" cy="34.4" r="3" fill="rgba(74,184,212,0.3)"/>
+          <circle cx="165.6" cy="165.6" r="3" fill="rgba(74,184,212,0.3)"/>
+          <circle cx="165.6" cy="34.4" r="3" fill="rgba(74,184,212,0.3)"/>
+          <circle cx="34.4" cy="165.6" r="3" fill="rgba(74,184,212,0.3)"/>
+        </svg>
+      </div>
+    </div>
+    <div class="pub-list" style="margin-top: 4rem;">
+      <div class="pub-item">
+        <div>
+          <div class="pub-title">Proof of concept: selective fat reduction with novel materials-based approach</div>
+          <div class="pub-journal">Plastic and Reconstructive Surgery, 2020 &middot; Garibyan L, et al.</div>
+        </div>
+        <div class="pub-tag">Peer Reviewed</div>
+      </div>
+      <div class="pub-item">
+        <div>
+          <div class="pub-title">Histologic confirmation of tissue safety and new collagen formation following treatment</div>
+          <div class="pub-journal">Harvard Medical School / Massachusetts General Hospital</div>
+        </div>
+        <div class="pub-tag">Published</div>
+      </div>
+      <div class="pub-item">
+        <div>
+          <div class="pub-title">~55% fat thickness reduction (p&lt;0.001) with zero tissue damage in a single treatment</div>
+          <div class="pub-journal">Preclinical data &middot; Multiple confirmatory studies</div>
+        </div>
+        <div class="pub-tag">Key Finding</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ==========================================
+     TEAM
+     ========================================== -->
+<section class="team-section" id="team">
+  <div class="section-inner fade-in">
+    <p class="section-label">Leadership</p>
+    <h2>Built by pioneers in aesthetic medicine and device commercialization</h2>
+    <p class="body-text">The team behind Annecy Bio includes the scientists who helped create the modern aesthetic dermatology industry — alongside experienced operators in biotech strategy and commercialization.</p>
+    <div class="team-grid">
+      <div class="team-member">
+        <div class="team-avatar">
+          <img src="lilit-garibyan.jpg" alt="Dr. Lilit Garibyan, CEO & Inventor at Annecy Bio" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="initials" style="display:none;">LG</div>
+        </div>
+        <div class="team-name">Dr. Lilit Garibyan</div>
+        <div class="team-role">CEO &amp; Co-Founder</div>
+        <div class="team-bio">Harvard Medical School faculty. Pioneer in injectable and selective cooling technology with 20+ patents and 9+ peer-reviewed publications. Co-founder of Brixton Bio and EyeCool Therapeutics.</div>
+      </div>
+      <div class="team-member">
+        <div class="team-avatar">
+          <img src="rox-anderson.jpg" alt="Dr. Rox Anderson, Co-Inventor & SAB Chair at Annecy Bio" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="initials" style="display:none;">RA</div>
+        </div>
+        <div class="team-name">Dr. Rox Anderson</div>
+        <div class="team-role">Co-Founder &amp; SAB Chair</div>
+        <div class="team-bio">Harvard Professor. Inventor of selective photothermolysis and selective cryolipolysis. Widely regarded as the father of modern aesthetic dermatology. Co-founded multiple category-defining companies.</div>
+      </div>
+      <div class="team-member">
+        <div class="team-avatar">
+          <img src="luba-greenwood.jpg" alt="Luba Greenwood, Executive Chair at Annecy Bio" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="initials" style="display:none;">LG</div>
+        </div>
+        <div class="team-name">Luba Greenwood, JD</div>
+        <div class="team-role">Co-Founder &amp; Executive Chair</div>
+        <div class="team-bio">Biotech and tech CEO, investor, and company builder. Founder &amp; Managing Partner of the Dana-Farber Cancer Institute venture fund. Former executive at Roche and Google. CEO of Gallop Oncology. Executive Fellow, Harvard Business School.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     CONTACT
+     ========================================== -->
+<section class="contact" id="contact">
+  <div class="section-inner">
+    <div class="contact-grid fade-in">
+      <div class="contact-details">
+        <p class="section-label" style="color: var(--accent-light); opacity: 0.8;">Get in touch</p>
+        <h2>We are selective about who we share details with</h2>
+        <p class="body-text">Annecy Bio is in active development. We welcome conversations with strategic investors, clinician partners, and select industry collaborators. If you're exploring the future of body contouring, fat loss, or aesthetic longevity — let's talk.</p>
+        <p>Annecy Bio, Inc.<br>Aesthetic Medicine<br>Boston, MA</p>
+      </div>
+      <div>
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-row">
+            <input type="text" name="first_name" placeholder="First name" required>
+            <input type="text" name="last_name" placeholder="Last name" required>
+          </div>
+          <input type="email" name="email" placeholder="Email address" required>
+          <select name="role" required aria-label="Your role">
+            <option value="" disabled selected>I am a...</option>
+            <option value="strategic-investor">Strategic Investor / VC</option>
+            <option value="corporate-bd">Corporate BD / M&A</option>
+            <option value="clinician">Clinician / KOL</option>
+            <option value="industry">Industry Partner</option>
+            <option value="media">Media / Analyst</option>
+            <option value="other">Other</option>
+          </select>
+          <textarea name="message" placeholder="Tell us briefly what brings you here"></textarea>
+          <input type="hidden" name="_subject" value="New inquiry via annecybioco.com">
+          <button type="submit" class="submit-btn">Request Information</button>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <h3>Thank you for your interest</h3>
+          <p>We'll review your inquiry and respond to qualified contacts promptly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     FOOTER
+     ========================================== -->
+<footer>
+  <a href="#" class="logo">
+    <svg width="16" height="16" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+      <line x1="11" y1="1" x2="11" y2="21" stroke="#2a8fa8" stroke-width="1.2"/>
+      <line x1="1" y1="11" x2="21" y2="11" stroke="#2a8fa8" stroke-width="1.2"/>
+      <line x1="4.05" y1="4.05" x2="17.95" y2="17.95" stroke="#2a8fa8" stroke-width="1.2"/>
+      <line x1="17.95" y1="4.05" x2="4.05" y2="17.95" stroke="#2a8fa8" stroke-width="1.2"/>
+      <circle cx="11" cy="11" r="2" fill="#2a8fa8" opacity="0.7"/>
+    </svg>
+    <span>Annecy</span> Bio
+  </a>
+  <div class="footer-links">
+    <a href="#about">About</a>
+    <a href="#platform">Platform</a>
+    <a href="#science">Science</a>
+    <a href="#team">Leadership</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <p>&copy; 2026 Annecy Bio, Inc.</p>
+</footer>
+
+<!-- ==========================================
+     SCRIPTS
+     ========================================== -->
+<script>
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    const target = a.getAttribute('href');
+    if (target === '#') { window.scrollTo({ top: 0, behavior: 'smooth' }); return; }
+    const el = document.querySelector(target);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      document.getElementById('navLinks').classList.remove('open');
+    }
+  });
+});
+
+// Scroll-triggered fade-in
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Nav background on scroll
+const nav = document.querySelector('nav');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 60) {
+    nav.style.borderBottomColor = 'rgba(42,143,168,0.2)';
+  } else {
+    nav.style.borderBottomColor = 'rgba(42,143,168,0.12)';
+  }
+});
+
+// Form submission (Formspree)
+const form = document.getElementById('contactForm');
+const formSuccess = document.getElementById('formSuccess');
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const btn = form.querySelector('.submit-btn');
+  const originalText = btn.textContent;
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+    if (res.ok) {
+      form.style.display = 'none';
+      formSuccess.style.display = 'block';
+    } else {
+      btn.textContent = 'Error — try again';
+      btn.disabled = false;
+    }
+  } catch (err) {
+    btn.textContent = 'Error — try again';
+    btn.disabled = false;
+  }
+});
+
+// Mobile nav close on outside click
+document.addEventListener('click', (e) => {
+  const navLinks = document.getElementById('navLinks');
+  const hamburger = document.querySelector('.hamburger');
+  if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+    navLinks.classList.remove('open');
+  }
+});
+</script>
+
+</body>
+</html>
